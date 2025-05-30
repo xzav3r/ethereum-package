@@ -1,7 +1,7 @@
 participants:
 # EL
   - el_type: reth
-    el_image: ghcr.io/paradigmxyz/reth:v1.4.4
+    el_image: reth #ghcr.io/paradigmxyz/reth:v1.3.12
     el_log_level: ""
     el_extra_env_vars: {}
     el_extra_labels: {}
@@ -85,6 +85,9 @@ network_params:
   eth1_follow_distance: 2048
   min_validator_withdrawability_delay: 256
   shard_committee_period: 256
+  altair_fork_epoch: 0
+  bellatrix_fork_epoch: 0
+  capella_fork_epoch: 0
   deneb_fork_epoch: 0
   electra_fork_epoch: 0
   fulu_fork_epoch: 18446744073709551615
@@ -98,7 +101,7 @@ network_params:
   base_fee_update_fraction_electra: 100000000000
   additional_preloaded_contracts: {}
   devnet_repo: ethpandaops
-  prefunded_accounts: '{"0x8f8E2d6cF621f30e9a11309D6A56A876281Fd534": {"balance": "100000ETH"}, "0x4107be99052d895e3ee461C685b042Aa975ab5c0": {"balance": "1ETH"}}'
+  prefunded_accounts: '{"0x8f8E2d6cF621f30e9a11309D6A56A876281Fd534": {"balance": "10000000ETH"}, "0x4107be99052d895e3ee461C685b042Aa975ab5c0": {"balance": "1ETH"}}'
   bpo_1_epoch: 18446744073709551615
   bpo_1_max_blobs: 12
   bpo_1_target_blobs: 9
