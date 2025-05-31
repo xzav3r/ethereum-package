@@ -6,6 +6,7 @@ participants:
     el_extra_env_vars: {}
     el_extra_labels: {}
     el_extra_params: [
+      "--disable-discovery",
       "--txpool.pending-max-count=1000000",
       "--txpool.pending-max-size=2000",
       "--txpool.queued-max-count=1000000",
