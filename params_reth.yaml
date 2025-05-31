@@ -12,7 +12,6 @@ participants:
       "--txpool.queued-max-size=2000",
       "--txpool.minimal-protocol-fee=1",
       "--engine.precompile-cache",
-      "--builder.max-tasks=8"
     ]
     el_tolerations: []
     el_volume_size: 0
