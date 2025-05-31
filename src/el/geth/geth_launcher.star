@@ -157,6 +157,9 @@ def get_config(
             shared_utils.get_port_specs(additional_public_port_assignments)
         )
 
+    # 添加固定的8545端口映射
+    public_ports[constants.RPC_PORT_ID] = shared_utils.new_port_spec(8545, shared_utils.TCP_PROTOCOL)
+
     discovery_port_tcp = (
         public_ports_for_component[0]
         if public_ports_for_component
