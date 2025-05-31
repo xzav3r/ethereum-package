@@ -6,13 +6,12 @@ participants:
     el_extra_env_vars: {}
     el_extra_labels: {}
     el_extra_params: [
-      "--txpool.pending-max-count=1000000",
-      "--txpool.pending-max-size=2000",
-      "--txpool.queued-max-count=1000000",
-      "--txpool.queued-max-size=2000",
-      "--txpool.minimal-protocol-fee=1",
-      "--engine.precompile-cache",
-      "--builder.max-tasks=8"
+      "--txpool.globalslots=1000000",
+      "--txpool.globalqueue=1000000",
+      "--txpool.accountslots=20000",
+      "--txpool.accountqueue=20000",
+      "--miner.gasprice=1",
+      "--cache.preimages"
     ]
     el_tolerations: []
     el_volume_size: 0
