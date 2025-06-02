@@ -1,16 +1,19 @@
 participants:
   # EL
   - el_type: geth
-    el_image: ethereum/client-go:v1.15.11
+    el_image: xzav3r/geth:v1.15.11 #ethereum/client-go:v1.15.11
     el_log_level: ""
     el_extra_env_vars: {}
     el_extra_labels: {}
     el_extra_params: [
       "--txpool.globalslots=1000000",
       "--txpool.globalqueue=1000000",
-      "--txpool.accountslots=20000",
-      "--txpool.accountqueue=20000",
+      "--txpool.accountslots=1000000",
+      "--txpool.accountqueue=1000000",
+      "--txpool.pricelimit=1",
+      "--txpool.pricebump=10",
       "--miner.gasprice=1",
+      "--miner.gaslimit=500000000",
       "--cache.preimages"
     ]
     el_tolerations: []
