@@ -6,6 +6,8 @@ participants:
     el_extra_env_vars: {}
     el_extra_labels: {}
     el_extra_params: [
+      "--dev",
+      "--dev.block-time=2s",
       "--disable-discovery",
       "--txpool.pending-max-count=1000000",
       "--txpool.pending-max-size=2000",
